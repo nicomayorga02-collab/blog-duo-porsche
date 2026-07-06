@@ -1,0 +1,11 @@
+body {
+    margin: auto;
+    width: 100%;
+}
+
+.modelos{
+    display: flex;
+    flex: 1 1 calc( 30% - 33.33px);
+    flex-wrap: wrap;
+}
+
