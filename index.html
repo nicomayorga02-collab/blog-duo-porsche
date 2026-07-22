@@ -4,27 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <title>Porsche</title>
 </head>
 
 <body>
     
-    <audio src="resources/engine.mp3" autoplay></audio>
     <header>
         <img src="resources/logo.webp" alt="Logo" width="20%" style="position: absolute;">
-        <video src="resources/Porsche.webm" 
+        <video id="video-pc" src="resources/PorschePC.webm"
+        loop muted autoplay width="100%"></video>
+        <video id="video-mobile" src="resources/Porsche.webm" 
         loop muted autoplay width="100%"></video>
     </header>
     
+    <i>“Al principio miré a mi alrededor y no encontré el auto con el que soñaba. Así que decidí construirlo yo mismo.”</i>
     <div>
-        <i style="text-align: center; margin: 10%; display: block">“Al principio miré a mi alrededor y no encontré el auto con el que soñaba. Así que decidí construirlo yo mismo.”</i>
-        <p style="text-align: center;">Ferry Porsche — Fundador de la marca.</p>
-        <img src="resources/ferryPorsche.webp" alt="Ferry Porsche" width="80%" style="border-radius: 5%; margin: 10%;" >
-        <p style="text-align: justify; margin: 10%">En 1948, el mundo del automovilismo cambió para siempre. Ante la frustración de no encontrar un auto deportivo que cumpliera con sus altas expectativas de ligereza, agilidad y rendimiento, Ferry Porsche tomó una decisión radical: diseñar y construir el coche de sus sueños con sus propias manos. Así nació el Porsche 356, el primer capítulo de una leyenda obsesionada con desafiar la física, dominar los circuitos de carreras y redefinir la ingeniería alemana en cada generación.</p>
+        <b>Ferry Porsche — Fundador de la marca.</b>
+    </div>
+    
+    <div class="historia">
+        <img src="resources/ferryPorsche.webp" alt="Ferry Porsche">
+        <p>En 1948, el mundo del automovilismo cambió para siempre. Ante la frustración de no encontrar un auto deportivo que cumpliera con sus altas expectativas de ligereza, agilidad y rendimiento, Ferry Porsche tomó una decisión radical: diseñar y construir el coche de sus sueños con sus propias manos. Así nació el Porsche 356, el primer capítulo de una leyenda obsesionada con desafiar la física, dominar los circuitos de carreras y redefinir la ingeniería alemana en cada generación.</p>
     </div>
 
-    <h1 style="text-align: center">Modelos</h1>
     <div class="modelos">
+        <h1 style="text-align: center">Modelos Vehiculos</h1>
         <div class="modelos-slide">
             <img src="resources/911.webp" alt="911">
             <img src="resources/718.webp" alt="718">
@@ -33,11 +40,12 @@
         </div>
     </div>
 
+    
     <h1 style="text-align: center">Porsche Motorsport</h1>
     <h3 style="text-align: center">Nacido para las Carreras</h3>
-
     <div class="Motorsport">
-        <img src="resources/mRaceborn.webp" alt="Raceborn" style="width: 100%">
+        <img id="motorsport-pc" src="resources/Raceborn.webp" alt="Raceborn">
+        <img id="motorsport-mobile" src="resources/mRaceborn.webp" alt="Raceborn">
         <p>La historia de Porsche está ligada al asfalto de los circuitos bajo el lema de Porsche Motorsport, #Raceborn. Desde su legendaria victoria de clase en las 24 Horas de Le Mans en 1951, la marca ha utilizado la alta competición no como un escaparate publicitario, sino como el laboratorio tecnológico definitivo. </p>
         <p>Con un récord imbatible de más de 30,000 victorias en diversas disciplinas —que van desde la resistencia extrema en Le Mans y las brutales dunas del Rally Dakar, hasta la precisión eléctrica de la Fórmula E—, cada innovación mecánica y de software es probada al límite en la pista antes de transferirse a los vehículos de producción en serie.</p>
     </div>
@@ -47,15 +55,17 @@
         <p>El Porsche 911 es un automóvil deportivo de lujo producido por el fabricante alemán Porsche AG, desde 1964. A través de los años, ha pasado por varias regeneraciones. De todas formas, muchas de las características del modelo original se conservan, como su configuración «todo atrás», su carrocería coupé fastback, el motor bóxer de seis cilindros y un interior con configuración 2+2 plazas.
 Existen ocho generaciones que fueron puestas a la venta en los años 1964, 1974, 1988, 1993, 1998, 2004, 2011 y 2018; y que se distinguen por su código de proyecto: 901, 930, 964, 993, 996, 997, 991 y 992.</p>
 <div>
-<iframe 
-    width="560" 
-    height="315" 
-    src="https://www.youtube.com/watch?v=DZAdVY9kKbc" 
-    title="Reproductor de video" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    allowfullscreen>
-</iframe>  
+<main class="tarjeta-video">
+
+        <div class="contenedor-iframe">
+            <iframe 
+                src="resources/Porsche 911.mp4" 
+                title="Reproductor de video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </main>
     </div>
 <div>
     <h1 style="text-align: center;">Mas información</h1>
